@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      bootstrap="vendor/autoload.php" 
+      backupGlobals="false" 
+      colors="true" 
+      processIsolation="false" 
+      stopOnFailure="false" 
+      xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.5/phpunit.xsd" 
+      cacheDirectory=".phpunit.cache" 
+      backupStaticProperties="false">
+  <php>
+    <env name="APP_ENV" value="testing"/> 
+    <env name="PAYSTACK_PUBLIC_KEY" force="true" value="pk_test_mocked"/>
+    <env name="PAYSTACK_SECRET_KEY" force="true" value="sk_test_mocked"/>
+    <env name="PAYSTACK_PAYMENT_URL" force="true" value="https://api.paystack.co"/>
+  </php>
+  <testsuites>
+    <testsuite name="Unit">
+        <directory suffix="Test.php">./tests/Unit</directory>
+    </testsuite>
+    <testsuite name="Integration">
+        <directory suffix="Test.php">./tests/Integration</directory>
+    </testsuite>
+  </testsuites>
+  <logging>
+        <junit outputFile="build/report.junit.xml"/>
+        <teamcity outputFile="teamcity.txt"/>
+        <testdoxHtml outputFile="build/report.junit.html"/>
+        <testdoxText outputFile="build/report.junit.txt"/>
+    </logging>
+  <source>
+    <include>
+      <directory suffix=".php">src/</directory>
+    </include>
+  </source>
+</phpunit>

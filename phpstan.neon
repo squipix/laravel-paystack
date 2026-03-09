@@ -1,0 +1,9 @@
+parameters:
+    treatPhpDocTypesAsCertain: false
+    reportUnmatchedIgnoredErrors: false
+    excludePaths:
+        - tests/*
+    level: max
+    ignoreErrors:
+        - message: '#Call to an undefined static method Squipix\\Paystack\\Facades\\Paystack::transRef\(\).#'
+    
