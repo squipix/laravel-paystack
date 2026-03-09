@@ -6,10 +6,9 @@ namespace Squipix\Paystack\Test\Integration;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Str;
 use Squipix\Paystack\Facades\Paystack;
-use Squipix\Paystack\Test\TestCase;
 use Squipix\Paystack\Services\CustomerService;
 
-class CustomerServiceTest extends TestCase
+class CustomerServiceTest extends IntegrationTestCase
 {
     protected CustomerService $customer;
 

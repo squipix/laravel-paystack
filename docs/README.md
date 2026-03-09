@@ -37,7 +37,8 @@ Run the test suite using PHPUnit:
 composer test
 ```
 
-> Note: Integration tests require a valid `PAYSTACK_SECRET_KEY` in your `.env.testing` file.
+> Note: Integration tests are opt-in. Set `PAYSTACK_RUN_INTEGRATION_TESTS=true`
+> in `.env.testing` and provide valid `PAYSTACK_SECRET_KEY` / `PAYSTACK_PUBLIC_KEY` values.
 
 ## Contributing
 

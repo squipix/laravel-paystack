@@ -3,9 +3,8 @@
 namespace Squipix\Paystack\Test\Integration;
 
 use Squipix\Paystack\Facades\Paystack;
-use Squipix\Paystack\Test\TestCase;
 
-class PageServiceTest extends TestCase
+class PageServiceTest extends IntegrationTestCase
 {
     public function testCreatePageWithRealApi(): void
     {

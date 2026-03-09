@@ -4,10 +4,9 @@ namespace Squipix\Paystack\Test\Integration;
 
 use Illuminate\Support\Str;
 use Squipix\Paystack\Client\PaystackClient;
-use Squipix\Paystack\Test\TestCase;
 use Squipix\Paystack\Services\TransactionService;
 
-class TransactionServiceTest extends TestCase
+class TransactionServiceTest extends IntegrationTestCase
 {
     protected TransactionService $transaction;
     protected string $secretKey;
@@ -33,8 +32,8 @@ class TransactionServiceTest extends TestCase
     
     public function testInitializeTransactionWithRealApi(): void
     {
-        if (! str_starts_with($this->baseUrl, 'http')) {
-            throw new \InvalidArgumentException("Invalid Paystack base URL: {$this->baseUrl}");
+        if (! str_starts_with($this->paymentUrl, 'http')) {
+            throw new \InvalidArgumentException("Invalid Paystack base URL: {$this->paymentUrl}");
         }
 
         // $reference = Str::uuid()->toString();

@@ -4,9 +4,8 @@
 namespace Squipix\Paystack\Test\Integration;
 
 use Squipix\Paystack\Facades\Paystack;
-use Squipix\Paystack\Test\TestCase;
 
-class PlanServiceTest extends TestCase
+class PlanServiceTest extends IntegrationTestCase
 {
     public function testCreatePlanWithRealApi(): void
     {
