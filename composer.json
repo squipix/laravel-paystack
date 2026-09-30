@@ -37,12 +37,12 @@
     "prefer-stable": true,
     "require": {
         "php": "^7.2|^8.0|^8.1|^8.2",
-        "illuminate/support": "~6|~7|~8|~9|^10.0|^11.0|^12.0",
-        "illuminate/events": "~6|~7|~8|~9|^10.0|^11.0|^12.0",
-        "illuminate/http": "~6|~7|~8|~9|^10.0|^11.0|^12.0",
-        "illuminate/routing": "~6|~7|~8|~9|^10.0|^11.0|^12.0",
-        "illuminate/view": "~6|~7|~8|~9|^10.0|^11.0|^12.0",
-        "illuminate/database": "~6|~7|~8|~9|^10.0|^11.0|^12.0"
+        "illuminate/support": "~6|~7|~8|~9|^10.0|^11.0|^12.0|^13.0",
+        "illuminate/events": "~6|~7|~8|~9|^10.0|^11.0|^12.0|^13.0",
+        "illuminate/http": "~6|~7|~8|~9|^10.0|^11.0|^12.0|^13.0",
+        "illuminate/routing": "~6|~7|~8|~9|^10.0|^11.0|^12.0|^13.0",
+        "illuminate/view": "~6|~7|~8|~9|^10.0|^11.0|^12.0|^13.0",
+        "illuminate/database": "~6|~7|~8|~9|^10.0|^11.0|^12.0|^13.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.85",
@@ -87,6 +87,7 @@
             }
         }
     },
+    "version": "1.0.1",
     "config": {
         "sort-packages": true
     }
